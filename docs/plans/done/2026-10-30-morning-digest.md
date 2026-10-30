@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+finished: 2026-10-30
 ---
 
 # Morning digest
@@ -77,3 +78,22 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Completed issue list
+
+- [Read and summarize one night of task records](https://github.com/TmLev/daily-status/issues/1) — complete
+- [Show the morning digest as a readable page](https://github.com/TmLev/daily-status/issues/2) — complete
+- [Return the same digest as machine-readable JSON](https://github.com/TmLev/daily-status/issues/3) — complete
+- [Link each recorded night from the status board](https://github.com/TmLev/daily-status/issues/4) — complete
+- [Test digest routes for normal, missing, empty and damaged records](https://github.com/TmLev/daily-status/issues/5) — complete
+- [Publish an HTML copy for the course reviewer](https://github.com/TmLev/daily-status/issues/6) — complete
+- [Remove the preview marker after review and archive the plan](https://github.com/TmLev/daily-status/issues/7) — complete
+
+## Verification and handoff
+
+- Thirteen tests and the TypeScript check passed after all implementation work.
+- Original run fixtures were preserved.
+- The reviewer explicitly confirmed seeing the marked sample digest before cleanup.
+- The same public URL, https://daily-status-preview.vercel.app, now serves a fresh capture made with LANE_MARKER unset and displays "no marker set".
+- The superseded marked Vercel deployment was deleted after the replacement was verified.
+- Preview HTML and environment files remain outside the repository.
